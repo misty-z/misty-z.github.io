@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){ //sudah dalam bentuk library jQuery
+  $("#jquery").click(function(){
+    alert("Value: " + $("#test").val());
+  });
+});
+</script>
+<script>
+function sayHello(){ //javascript asli
+	var x = document.getElementById("test").value ;
+    alert("Value: " + x );
+}
+</script>
+</head>
+<body>
+
+<p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
+
+<button id="jquery">Show Value</button>
+<button id="aslijs" onclick="sayHello();">Show Value Asli JS</button>
+</body>
+</html>
+

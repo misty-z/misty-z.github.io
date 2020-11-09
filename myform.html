@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>05211940000032 - Alif Amri </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+.label {float: left; width: 150px; }
+.infobox {width: 200px; }
+.error { color: red; padding-left: 10px; }
+.submit { margin-left: 150px; margin-top: 10px;}
+
+</style>
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+$('.error').hide();
+$('.submit').click(function(event){
+var data=$('.infobox').val();
+if(validate_phoneno(data))
+{
+$('.error').hide();
+}
+else
+{
+$('.error').show();
+event.preventDefault();
+}
+});
+});
+function validate_phoneno(ph)
+{
+var pattern=new RegExp(/^[0-9-+]+$/);
+return pattern.test(ph);
+}
+    </script>
+</body>
+
+</html>
