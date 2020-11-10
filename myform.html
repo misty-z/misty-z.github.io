@@ -1,40 +1,117 @@
-<html>
-<head>
-<title>05211940000032 - Alif Amri </title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<style>
-
-.label {float: left; width: 150px; }
-.infobox {width: 200px; }
-.error { color: red; padding-left: 10px; }
-.submit { margin-left: 150px; margin-top: 10px;}
-
-</style>
-</head>
-<body>
-<script>
-    $(document).ready(function() {
-$('.error').hide();
-$('.submit').click(function(event){
-var data=$('.infobox').val();
-if(validate_phoneno(data))
-{
-$('.error').hide();
-}
-else
-{
-$('.error').show();
-event.preventDefault();
-}
-});
-});
-function validate_phoneno(ph)
-{
-var pattern=new RegExp(/^[0-9-+]+$/);
-return pattern.test(ph);
-}
-    </script>
-</body>
-
-</html>
+<html lang="en"><head>
+    <title>Input Username Github</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+         background-image: url("gambar/WhatsApp.png");
+         background-size: 100%;
+      }
+      .bigbox {
+          background: whitesmoke;
+          border-radius: 10px;
+          box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+          height: 325px;
+          margin: 6rem auto 8.1rem auto;
+          width: 600px;
+      }
+      .label { 
+          width: 50px; 
+      }  
+      .infobox {
+          width: 220px; 
+      }  
+      .error { 
+          color: red; 
+          padding-top: 0px;
+          padding-left: 240px;
+          font-size: small;
+      } 
+      .submit { 
+          margin-left: 240px; 
+          margin-top: 15px;
+      } 
+      .container{
+          widows: 600px;
+          height:100px;
+          padding:20px;
+          position: fixed;
+          top: 250px;
+          left: 650px;
+          margin-top: -120px;
+          margin-left: -220px;
+      }
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .input {
+          text-align: center;
+      }
+      .forgot{
+          margin-left: 191px; 
+          margin-top: 10px;
+      }
+    </style>
+  </head>
+  
+  <body> 
+      <div class="bigbox"> 
+          <div class="title">
+              <h2 style="color: rgba(0, 0, 0, 0.65);">Validasi Nomor WhatsApp</h2>
+              <div>
+                  <p></p>
+                  <i class="fab fa-whatsapp" style="font-size: 42px; color: limegreen;"></i>
+              </div>
+              <br>
+              <h6 style="color: rgba(0, 0, 0, 0.65);">Masukkan nomor yang terdaftar yaa!</h6>
+              <form id="signup" method="post" action="">  
+                  </form></div>  
+                  <div class="input">
+                      <span class="label">No. Telepon &nbsp;</span>
+                      <input type="text" class="infobox" name="phone"> 
+                      <br>  
+                  </div>
+                  <div>
+                      <span class="error" style="display: none;">Hanya boleh angka 
+                        dan tanda + - saja
+                        </span> 
+                  </div>     
+                      <input class="submit btn btn-outline-success" type="submit" value="Submit">   
+              
+          <script>
+              $(document).ready(function() { //menjalankan fungsi saat halaman dimuat
+                    $('.error').hide(); // menyembunyikan "error" saat awal halaman dimuat
+                    $('.submit').click(function(event){ //menjalankan "event" saat tombol submit diklik 
+                        var data=$('.infobox').val(); //mengatur nilai pada infobox sesuai dengan input dari user
+                        if(validate_phoneno(data)) //memvalidasi data yang telah diinput
+                        {
+                        $('.error').hide(); //menyembunyikan pesan "error" jika data yang diinput valid
+                        }
+                        else
+                        {
+                        $('.error').show(); //menampilkan pesan "error" jika data yang diinput tidak valid
+                        event.preventDefault(); //menghentikan perintah default dari elemen yang dipilih untuk terjadi
+                        }
+                       });
+                    });
+                function validate_phoneno(ph) //fungsi untuk memvalidasi data yang diinput
+                 {
+                    var pattern=new RegExp(/^[0-9-+]+$/); //menentukan batasan/domain nilai apa saja yang dianggap valid (0-9 dan -+)
+                    return pattern.test(ph); //memeriksa apakah data yang diinput sesuai atau tidak
+                 } 
+          </script>   
+      </div>
+   
+  </body></html>
